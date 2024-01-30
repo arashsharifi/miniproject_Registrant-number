@@ -1,0 +1,112 @@
+/* StopWatch.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #5e6776;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 30px 0;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: #303030;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  margin: 5px;
+  width: 100%;
+  max-width: 800px;
+  height: 60vh;
+  box-sizing: border-box;
+  color: white;
+}
+
+.timeDisplay {
+  padding: 20px;
+  font-size: 30px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  border-radius: 0.25em;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button.btn {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 1px solid #ced4da;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #1d9bf0;
+  color: #fff;
+  font-size: 11px;
+  transition: all 0.5s;
+}
+button.btn:nth-child(1) {
+  background-color: green;
+}
+button.btn:nth-child(2) {
+  background-color: red;
+}
+button.btn:nth-child(4) {
+  background-color: rgb(103, 5, 5);
+}
+
+button.btn:hover {
+  transition: 1s;
+  border: 2px solid white;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+.laps {
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.laps h3 {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  font-style: italic;
+}
+
+.laps ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.laps li {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 5px 10px 5px;
+  font-size: 19px;
+  color: #fffff0;
+}
+.laps li:nth-child(odd) {
+  background-color: #1d9bf0;
+}
+
+@media screen and (max-width: 420px) {
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
